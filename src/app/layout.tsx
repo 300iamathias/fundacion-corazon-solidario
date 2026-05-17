@@ -49,6 +49,14 @@ export const metadata: Metadata = {
     description:
       "Fundación sin fines de lucro reconocida por el Estado. Llevamos medicinas, regalos, talleres y esperanza a quienes más lo necesitan.",
     type: "website",
+    images: [
+      {
+        url: "/images/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Fundación Sembrando Esperanzas y Amor",
+      },
+    ],
   },
 };
 
@@ -61,7 +69,7 @@ export default function RootLayout({
     <html lang="es" suppressHydrationWarning>
       <head>
         <link rel="manifest" href="/manifest.json" />
-        <link rel="apple-touch-icon" href="/images/icon-192.png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="Sembrando Esperanzas" />
