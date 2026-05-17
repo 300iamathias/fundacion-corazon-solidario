@@ -18,34 +18,36 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
-  themeColor: "#e4600d",
+  themeColor: "#16a34a",
 };
 
 export const metadata: Metadata = {
-  title: "Fundación Corazón Solidario | Cada acto de amor transforma una vida",
+  title: "Fundación Sembrando Esperanzas y Amor | Cada acto de amor transforma una vida",
   description:
-    "Fundación sin fines de lucro reconocida por el Estado. Llevamos medicinas, regalos y esperanza a quienes más lo necesitan. Dona ahora y transforma vidas.",
+    "Fundación sin fines de lucro reconocida por el Estado. Llevamos medicinas, juguetes, talleres y esperanza a quienes más lo necesitan. Dona ahora y transforma vidas.",
   keywords: [
     "fundación",
     "sin fines de lucro",
     "donaciones",
     "medicinas",
     "regalos niños",
+    "talleres",
     "ayuda comunitaria",
     "voluntariado",
+    "sembrando esperanzas y amor",
     "caridad",
   ],
-  authors: [{ name: "Fundación Corazón Solidario" }],
+  authors: [{ name: "Fundación Sembrando Esperanzas y Amor" }],
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "Corazón Solidario",
+    title: "Sembrando Esperanzas",
   },
   openGraph: {
-    title: "Fundación Corazón Solidario | Cada acto de amor transforma una vida",
+    title: "Fundación Sembrando Esperanzas y Amor",
     description:
-      "Fundación sin fines de lucro reconocida por el Estado. Llevamos medicinas, regalos y esperanza a quienes más lo necesitan.",
+      "Fundación sin fines de lucro reconocida por el Estado. Llevamos medicinas, regalos, talleres y esperanza a quienes más lo necesitan.",
     type: "website",
   },
 };
@@ -62,11 +64,11 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/images/icon-192.png" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="Corazón Solidario" />
+        <meta name="apple-mobile-web-app-title" content="Sembrando Esperanzas" />
         <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="application-name" content="Corazón Solidario" />
-        <meta name="msapplication-TileColor" content="#e4600d" />
-        <meta name="msapplication-navbutton-color" content="#e4600d" />
+        <meta name="application-name" content="Sembrando Esperanzas" />
+        <meta name="msapplication-TileColor" content="#16a34a" />
+        <meta name="msapplication-navbutton-color" content="#16a34a" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}

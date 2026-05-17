@@ -88,29 +88,29 @@ export function PwaInstallPrompt() {
           transition={{ type: 'spring', stiffness: 300, damping: 30 }}
           className="fixed bottom-4 left-4 right-4 z-[100] sm:left-auto sm:right-4 sm:max-w-sm"
         >
-          <div className="bg-white rounded-2xl shadow-2xl shadow-warm-900/20 border border-warm-200 p-5 overflow-hidden relative">
+          <div className="bg-white rounded-2xl shadow-2xl shadow-foundation-green-900/20 border border-foundation-green-200 p-5 overflow-hidden relative">
             {/* Decorative gradient */}
-            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-warm-500 to-warm-400" />
+            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-foundation-green-500 to-foundation-green-600" />
 
             <button
               onClick={handleDismiss}
-              className="absolute top-3 right-3 p-1 rounded-full hover:bg-warm-100 transition-colors"
+              className="absolute top-3 right-3 p-1 rounded-full hover:bg-foundation-green-100 transition-colors"
               aria-label="Cerrar"
             >
-              <X className="w-4 h-4 text-warm-400" />
+              <X className="w-4 h-4 text-foundation-green-400" />
             </button>
 
             <div className="flex items-start gap-4">
               {/* Icon */}
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-warm-500 to-warm-600 flex items-center justify-center shrink-0 shadow-lg shadow-warm-500/30">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-foundation-green-500 to-foundation-green-600 flex items-center justify-center shrink-0 shadow-lg shadow-foundation-green-500/30">
                 <Smartphone className="w-6 h-6 text-white" />
               </div>
 
               <div className="flex-1 min-w-0">
-                <h3 className="font-bold text-warm-900 text-sm">
+                <h3 className="font-bold text-foundation-green-900 text-sm">
                   Instalar en tu celular
                 </h3>
-                <p className="text-xs text-warm-600/70 mt-1 leading-relaxed">
+                <p className="text-xs text-foundation-green-600/70 mt-1 leading-relaxed">
                   Accede rápidamente a la fundación desde tu pantalla de inicio, incluso sin internet.
                 </p>
 
@@ -118,7 +118,7 @@ export function PwaInstallPrompt() {
                   <Button
                     onClick={handleInstall}
                     size="sm"
-                    className="bg-gradient-to-r from-warm-500 to-warm-600 hover:from-warm-600 hover:to-warm-700 text-white shadow-md shadow-warm-500/20 flex-1"
+                    className="bg-gradient-to-r from-foundation-green-500 to-foundation-green-600 hover:from-foundation-green-600 hover:to-foundation-green-700 text-white shadow-md shadow-foundation-green-500/20 flex-1"
                   >
                     <Download className="w-4 h-4 mr-1.5" />
                     Instalar
@@ -127,7 +127,7 @@ export function PwaInstallPrompt() {
                     onClick={handleDismiss}
                     size="sm"
                     variant="ghost"
-                    className="text-warm-500 hover:text-warm-700"
+                    className="text-foundation-green-500 hover:text-foundation-green-700"
                   >
                     Ahora no
                   </Button>

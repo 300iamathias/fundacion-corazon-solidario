@@ -1,11 +1,11 @@
 {
-  "name": "Fundación Corazón Solidario",
-  "short_name": "Corazón Solidario",
-  "description": "Fundación sin fines de lucro. Llevamos medicinas, regalos y esperanza a quienes más lo necesitan.",
+  "name": "Fundación Sembrando Esperanzas y Amor",
+  "short_name": "Sembrando Esperanzas",
+  "description": "Fundación sin fines de lucro. Llevamos medicinas, regalos, talleres y esperanza a quienes más lo necesitan.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#fef7ed",
-  "theme_color": "#e4600d",
+  "background_color": "#f0fdf4",
+  "theme_color": "#16a34a",
   "orientation": "portrait-primary",
   "scope": "/",
   "lang": "es",
@@ -30,6 +30,5 @@
       "purpose": "maskable"
     }
   ],
-  "screenshots": [],
   "prefer_related_applications": false
 }

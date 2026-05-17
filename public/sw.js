@@ -1,17 +1,20 @@
 /// <reference lib="webworker" />
 
-const CACHE_NAME = 'corazon-solidario-v1'
+const CACHE_NAME = 'sembrando-esperanzas-v2'
 const STATIC_ASSETS = [
   '/',
   '/manifest.json',
   '/images/icon-192.png',
   '/images/icon-512.png',
-  '/images/hero.png',
-  '/images/about.png',
-  '/images/medicine.png',
-  '/images/children-gifts.png',
-  '/images/community.png',
-  '/images/cta.png',
+  '/images/logo.png',
+  '/images/hero.jpg',
+  '/images/medicine.jpg',
+  '/images/gifts.jpg',
+  '/images/community.jpg',
+  '/images/volunteers.jpg',
+  '/images/workshop.jpg',
+  '/images/clown.jpg',
+  '/images/cta.jpg',
 ]
 
 // Install event - cache static assets
@@ -44,16 +47,12 @@ self.addEventListener('activate', (event) => {
 
 // Fetch event - serve from cache, fallback to network
 self.addEventListener('fetch', (event) => {
-  // Skip non-GET requests
   if (event.request.method !== 'GET') return
-
-  // Skip API calls
   if (event.request.url.includes('/api/')) return
 
   event.respondWith(
     caches.match(event.request).then((cachedResponse) => {
       if (cachedResponse) {
-        // Return cached version and update cache in background
         const fetchPromise = fetch(event.request)
           .then((networkResponse) => {
             if (networkResponse && networkResponse.status === 200) {
@@ -69,7 +68,6 @@ self.addEventListener('fetch', (event) => {
         return cachedResponse
       }
 
-      // Not in cache, fetch from network
       return fetch(event.request)
         .then((networkResponse) => {
           if (!networkResponse || networkResponse.status !== 200) {
@@ -82,7 +80,6 @@ self.addEventListener('fetch', (event) => {
           return networkResponse
         })
         .catch(() => {
-          // Offline fallback for navigation
           if (event.request.mode === 'navigate') {
             return caches.match('/')
           }
